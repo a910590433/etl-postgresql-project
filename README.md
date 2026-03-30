@@ -29,8 +29,8 @@ This project extracts, transforms, cleans, and analyzes marriage data from Taiwa
 #### **How to Run / Setup**
 1. Clone the repository
 ```bash
-git clone https://github.com/a910590433/etl-postgresql-projects/tw-first-marriage.git
-cd etl-postgresql-projects/tw-first-marriage
+git clone https://github.com/a910590433/etl-postgresql-project.git
+cd etl-postgresql-project
 ```
 2. Install dependencies
 ```bash
