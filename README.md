@@ -1,9 +1,11 @@
 
 ### **ETL Pipeline: Taiwan First Marriage Age**
+This project builds an end-to-end ETL pipeline to process and analyze Taiwan government open data on the average age at first marriage. It extracts raw datasets from online sources, performs data cleaning and transformation, and loads the processed data into a PostgreSQL database for analysis and visualization.
+
 This project extracts, transforms, cleans, and analyzes marriage data from Taiwan government open datasets to provide insights into the average age at first marriage. The processed data is then loaded into a PostgreSQL database for further analysis.
 
 #### **Tools**
-- Programming Language: Python 3.x
+- Programming Language: Python
 - Data Manipulation: pandas
 - Data Visualization: matplotlib
 - Database: PostgreSQL
@@ -11,21 +13,21 @@ This project extracts, transforms, cleans, and analyzes marriage data from Taiwa
 - Development Environment: Visual Studio Code, Jupyter Notebook
 - Data Sources: [Taiwan government open datasets](https://data.gov.tw/dataset/160207)
 
-#### **Pipeline**
+#### **Pipeline Overview**
 1. **Extract**: Load raw CSV datasets from online sources (URLs)
-2. **Clean & Transform**:
-   - Remove duplicates
-   - Rename columns
+2. **Clean & Transform using Python**:
+   - Remove duplicate records
+   - Standardize and rename columns
    - Drop unnecessary fields
-   - Convert Minguo year to Gregorian year
+   - Convert Minguo years to Gregorian years
    - Reorder columns
-1. **Load**: Store the processed data in a PostgreSQL database
+   - Validation of invalid age values (e.g., < 0 or > 120)
+3. **Load**: Store the processed data in a PostgreSQL database
 #### **Key Features**
-- Structured ETL workflow for clarity and scalability
-- Duplicate detection and removal
-- Validation of invalid age values (e.g., < 0 or > 120)
-- Aggregation by year, gender, and city
-- Comparison between major and non-major cities
+- Applies data validation and cleaning best practices
+- Performs aggregation by year, gender, and city
+- Enables comparison between major and non-major cities
+- Integrates data visualization to highlight overall trend
 #### **How to Run / Setup**
 1. Clone the repository
 ```bash
@@ -50,9 +52,10 @@ engine = create_engine(
 )
 ```
 4. Run the ETL script
+Execute the Python script to extract, transform, and load the data
 
 #### **Findings**
-1. In Taiwan, both men and women are marrying at older ages compared to previous years. In 2023, the average age at first marriage was 32.5 for men and 30.5 for women.
-2. People in major cities tend to marry about one year later than those in non-major cities, although this gap narrowed slightly in 2023.
-3. The top three cities with the highest average age at first marriage for both genders are Taipei, New Taipei, and Kaohsiung.
-
+1. The average age at first marriage in Taiwan has steadily increased over time for both men and women.
+2. In 2023, the average age at first marriage reached **32.5 for men** and **30.5 for women**.
+3. Individuals in major cities tend to marry approximately **one year later** than those in non-major cities, although this gap narrowed slightly in 2023.
+4. The top three cities with the highest average age at first marriage for both genders are **Taipei, New Taipei, and Kaohsiung**, indicating a strong urban effect on marriage patterns.
