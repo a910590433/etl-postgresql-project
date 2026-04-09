@@ -50,7 +50,7 @@ engine = create_engine(
 )
 ```
 4. Run the ETL script
-Execute the Python script to extract, transform, and load the data
+- Execute the Python script to extract, transform, and load the data
 
 #### **Findings**
 1. The average age at first marriage in Taiwan has steadily increased over time for both men and women.
