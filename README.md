@@ -30,7 +30,7 @@ This project extracts, transforms, cleans, and analyzes marriage data from Taiwa
 1. Clone the repository
 ```bash
 git clone https://github.com/a910590433/etl-postgresql-project-1.git
-cd etl-postgresql-project
+cd etl-postgresql-project-1
 ```
 2. Install dependencies
 ```bash
