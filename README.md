@@ -55,5 +55,5 @@ engine = create_engine(
 #### **Findings**
 1. The average age at first marriage in Taiwan has steadily increased over time for both men and women.
 2. In 2023, the average age at first marriage reached **32.5 for men** and **30.5 for women**.
-3. Individuals in major cities tend to marry approximately **one year later** than those in non-major cities, although this gap narrowed slightly in 2023.
+3. Individuals in major cities (Taipei, New Taipei, Taoyuan, Taichung, Tainan, and Kaohsiung) tend to marry approximately **one year later** than those in non-major cities, although this gap narrowed slightly in 2023.
 4. The top three cities with the highest average age at first marriage for both genders are **Taipei, New Taipei, and Kaohsiung**, indicating a strong urban effect on marriage patterns.
