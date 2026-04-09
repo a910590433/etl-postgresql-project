@@ -2,8 +2,6 @@
 ### **ETL Pipeline: Taiwan First Marriage Age**
 This project builds an end-to-end ETL pipeline to process and analyze Taiwan government open data on the average age at first marriage. It extracts raw datasets from online sources, performs data cleaning and transformation, and loads the processed data into a PostgreSQL database for analysis and visualization.
 
-This project extracts, transforms, cleans, and analyzes marriage data from Taiwan government open datasets to provide insights into the average age at first marriage. The processed data is then loaded into a PostgreSQL database for further analysis.
-
 #### **Tools**
 - Programming Language: Python
 - Data Manipulation: pandas
